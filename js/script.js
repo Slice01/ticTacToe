@@ -21,6 +21,7 @@ function reset(){
 	overlay.classList.add('hidden');
 };
 
+//Button functionality
 function clickButton() {
 	const p1 = document.getElementById('onePlayerButton');
 	const p2 = document.getElementById('twoPlayerButton');
@@ -100,6 +101,7 @@ function clickButton() {
 	}
 }
 
+//Board object constructor with clone function for AI move prediction
 function Board() {
 	this.players = 1;
 	this.turn = 'X';
@@ -258,6 +260,7 @@ function Board() {
     };	
 };
 
+//AI object constructor with minimax logic to determine best move
 function AI() {
 
 	this.difficulty = 'medium';
@@ -369,6 +372,7 @@ function AI() {
 	};
 };
 
+//Player cell selection
 function pickCell(){
 	let cell = this.id;
 
